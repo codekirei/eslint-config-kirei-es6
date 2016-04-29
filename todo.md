@@ -1,3 +1,1 @@
-- eslint-plugin-import
-- vanilla es6 rules
-- eslint-plugin-babel?
+- readme
