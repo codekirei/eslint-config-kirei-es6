@@ -6,7 +6,7 @@
 const es5Rules = require('eslint-config-kirei-es5').rules
 
 // local
-const es6Rules = require('./rules/import')
+const es6Rules = require('./rules/es6')
 const importRules = require('./rules/import')
 
 // config ----------------------------------------------------------------------
