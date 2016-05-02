@@ -11,7 +11,7 @@ const importRules = require('./rules/import')
 
 // config ----------------------------------------------------------------------
 
-const overrides = {
+const overrideRules = {
   strict: 0,
 }
 
@@ -34,7 +34,7 @@ module.exports = {
   rules: Object.assign(
     {},
     es5Rules,
-    overrides,
+    overrideRules,
     es6Rules,
     importRules
   ),

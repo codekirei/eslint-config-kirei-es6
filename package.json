@@ -26,7 +26,7 @@
   "dependencies": {
     "babel-eslint": "6.0.4",
     "eslint": "2.8.0",
-    "eslint-config-kirei-es5": "0.1.1",
+    "eslint-config-kirei-es5": "0.1.4",
     "eslint-plugin-import": "1.6.0"
   },
   "devDependencies": {
