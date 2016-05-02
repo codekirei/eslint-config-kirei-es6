@@ -2,29 +2,47 @@
 
 // node modules ----------------------------------------------------------------
 
-const fs = require('fs')
-const path = require('path')
 const assert = require('assert')
 
 // node modules ----------------------------------------------------------------
 
 const diff = require('lodash.difference')
+const eslint = require('eslint')
+const importPlugin = require('eslint-plugin-import')
 
 // local modules ---------------------------------------------------------------
 
-const kireiES6Rules = Object.keys(require('../rules/es6').rules)
-const kireiImportRules =
-  Object.keys(
-    require('../rules/import').rules
-  ).map(rule => rule.split('/')[1])
+const localES6 = require('../rules/es6').rules
+const localImport = require('../rules/import').rules
+
+// es5 rules
+const bestPractices = require('../node_modules/eslint-config-kirei-es5/rules/best-practices')
+const node = require('../node_modules/eslint-config-kirei-es5/rules/node')
+const possibleErrors = require('../node_modules/eslint-config-kirei-es5/rules/possible-errors')
+const strictMode = require('../node_modules/eslint-config-kirei-es5/rules/strict-mode')
+const stylisticIssues = require('../node_modules/eslint-config-kirei-es5/rules/stylistic-issues')
+const variables = require('../node_modules/eslint-config-kirei-es5/rules/variables')
 
 // setup -----------------------------------------------------------------------
 
-const kireiES5Path = './node_modules/eslint-config-kirei-es5/rules'
-let kireiES5Rules
-let kireiESLintRules
-let eslintRules
-let importRules
+const eslintRules = Object.keys(eslint.linter.defaults().rules)
+
+const localES5Rules = Object.keys(
+  Object.assign(
+    {},
+    bestPractices.rules,
+    node.rules,
+    possibleErrors.rules,
+    strictMode.rules,
+    stylisticIssues.rules,
+    variables.rules
+  )
+)
+
+const localES6Rules = Object.keys(localES6)
+
+const importRules = Object.keys(importPlugin.rules)
+const localImportRules = Object.keys(localImport).map(rule => rule.split('/')[1])
 
 // cases -----------------------------------------------------------------------
 
