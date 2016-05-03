@@ -25,9 +25,9 @@
   "homepage": "https://github.com/codekirei/eslint-config-kirei-es6#readme",
   "dependencies": {
     "babel-eslint": "6.0.4",
-    "eslint": "2.8.0",
+    "eslint": "2.9.0",
     "eslint-config-kirei-es5": "0.1.4",
-    "eslint-plugin-import": "1.6.0"
+    "eslint-plugin-import": "1.6.1"
   },
   "devDependencies": {
     "lodash.difference": "4.2.0",
