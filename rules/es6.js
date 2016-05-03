@@ -27,7 +27,7 @@ module.exports = {
   'prefer-spread': 0,
   'prefer-template': 2,
   'require-yield': 0,
-  'sort-imports': [2, { memberSyntaxSortOrder: ['none', 'all', 'single', 'multiple'] }],
+  'sort-imports': 0, // defer to import/order
   'template-curly-spacing': 2,
   'yield-star-spacing': [2, 'after'],
 }
