@@ -16,6 +16,7 @@ module.exports = {
   'no-new-symbol': 2,
   'no-restricted-imports': 0,
   'no-this-before-super': 0,
+  'no-useless-computed-key': 2,
   'no-useless-constructor': 2,
   'no-var': 2,
   'object-shorthand': [2, 'always'],
