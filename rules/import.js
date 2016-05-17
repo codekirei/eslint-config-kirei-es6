@@ -3,7 +3,10 @@
 module.exports = {
   'import/default': 2,
   'import/export': 2,
-  'import/extensions': [2, { js: 'never', jsx: 'always' }],
+  'import/extensions': [2, {
+    js: 'never',
+    jsx: 'always',
+  }],
   'import/imports-first': [2, 'absolute-first'],
   'import/named': 0,
   'import/namespace': 2,

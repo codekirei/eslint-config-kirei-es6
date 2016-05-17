@@ -3,7 +3,10 @@
 module.exports = {
   'arrow-body-style': [2, 'as-needed'],
   'arrow-parens': 0,
-  'arrow-spacing': [2, { before: true, after: true }],
+  'arrow-spacing': [2, {
+    before: true,
+    after: true,
+  }],
   'constructor-super': 0,
   'generator-star-spacing': 0,
   'no-class-assign': 0,
