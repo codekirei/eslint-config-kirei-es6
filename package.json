@@ -24,7 +24,6 @@
   },
   "homepage": "https://github.com/codekirei/eslint-config-kirei-es6#readme",
   "dependencies": {
-    "babel-eslint": "6.0.4",
     "eslint-config-kirei-es5": "0.4.0",
     "eslint-plugin-import": "1.6.1"
   },

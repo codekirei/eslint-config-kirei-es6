@@ -11,12 +11,14 @@ const importRules = require('./rules/import')
 
 // config ----------------------------------------------------------------------
 
-const overrideRules = {
-  strict: 0,
-}
-
 module.exports = {
-  parser: 'babel-eslint',
+  parserOptions: {
+    ecmaVersion: 6,
+    ecmaFeatures: {
+      impliedStrict: true,
+      jsx: true,
+    },
+  },
   plugins: [
     'import',
   ],
@@ -37,7 +39,6 @@ module.exports = {
   rules: Object.assign(
     {},
     es5Rules,
-    overrideRules,
     es6Rules,
     importRules
   ),
